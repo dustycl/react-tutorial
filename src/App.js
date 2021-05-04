@@ -3,12 +3,30 @@ import Table from './Table.js';
 
 class App extends Component {
     render() {
-      return (
-        <div className="container">
-          <Table />
-        </div>
-      )
+        const characters = [
+            {
+                name: 'Charlie',
+                job: 'Janitor',
+            },
+            {
+                name: 'Mac',
+                job: 'Bouncer',
+            },
+            {
+                name: 'Dee',
+                job: 'Aspiring actress',
+            },
+            {
+                name: 'Dennis',
+                job: 'Bartender',
+            },
+        ]
+        return (
+            <div className="container">
+                <Table />
+            </div>
+        )
     }
-  }
+}
 
   export default App
