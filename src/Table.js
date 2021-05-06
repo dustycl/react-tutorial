@@ -26,15 +26,15 @@ const TableBody = (props) => {
     )
 }
 
-class Table extends Component {
-    render() {
-        return (
-            <table>
-                <TableHeader />
-                <TableBody characterData={this.props.characterData} />
-            </table>
-        )
-    }
+const Table = (props) => {
+    const {characterData, removeCharacter} = props
+
+    return (
+        <table>
+            <TableHeader />
+            <TableBody characterData={characterData} removeCharacter={removeCharacter} />
+        </table>
+    )
 }
 
 export default Table
