@@ -23,11 +23,10 @@ class App extends Component {
         ],
     }
 
-    removeCharacter(index) {
-        const {characters} = this.state
+    removeCharacter = (index) => {
 
         this.setState({
-            characters: characters.filter((character, i) => {
+            characters: this.state.characters.filter((character, i) => {
                 return i !== index
             }),
         })
